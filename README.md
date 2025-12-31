@@ -1,32 +1,13 @@
-# Lenovo Driver Management Lab
+# Lenovo Driver Management – Intune Style
 
-## Overview
-In enterprise environments, uncontrolled driver and firmware updates can cause widespread hardware issues such as camera, audio, or chipset failures.  
-This project demonstrates a controlled driver update strategy using Lenovo Update Retriever and Lenovo Thin Installer.
+This project demonstrates an Intune-style Win32 app deployment for controlled Lenovo driver updates using PowerShell.
 
-## Objectives
-- Prevent hardware failures during bulk system updates
-- Control driver deployment instead of relying on Windows Update
-- Perform silent installations suitable for enterprise rollout
-- Validate driver health after installation
-- Maintain system stability during updates
+## What this project shows
+- Enterprise-style deployment approach
+- Silent installation logic
+- Detection and validation concept
+- Logging and rollback awareness
 
-## Tools & Technologies
-- Lenovo Update Retriever
-- Lenovo Thin Installer
-- PowerShell
-- Windows Enterprise Environment
-
-## Implementation Approach
-1. Drivers are downloaded and curated using Lenovo Update Retriever
-2. Approved drivers are deployed using Thin Installer in silent mode
-3. Driver health is validated post-installation
-4. Logs are generated for auditing and troubleshooting
-5. Rollback strategy is planned in case of failures
-
-## Sample Automation
-PowerShell is used to automate silent installation and validation.
-
-## Disclaimer
-This is a **lab-based project** recreated for learning and demonstration purposes.  
-No company-specific data, configurations, or proprietary information is included.
+## Use Case
+Uncontrolled driver updates can cause hardware issues during bulk deployments.  
+This project shows how such updates can be managed safely using an Intune-style model.
